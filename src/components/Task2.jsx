@@ -14,7 +14,7 @@ const Task2 = () => {
       console.log(counter, "<<< counter here");
     }
     //Do not change code above this line
-  });
+  }, []); // add an empty dependancy array here to avoid infinite counters. this is standard practise
 
   return (
     <div>

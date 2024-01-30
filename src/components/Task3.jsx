@@ -14,7 +14,7 @@ const Task3 = () => {
       console.log(counter, "<<< counter here");
     }
     //Do not change code above this line
-  }, [counter]);
+  }, []); // previously [counter] which runs an infinite loop. the dependency would change on every render
 
   return (
     <div>
